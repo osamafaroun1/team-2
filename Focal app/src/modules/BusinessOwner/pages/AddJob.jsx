@@ -4,9 +4,9 @@ import InputThree from '.././components/InputThree'
 import InputTow from '.././components/InputTwo'
 import './AddJob.css'
 import axios from 'axios'
-
-/*import Footer from '../../../../src/components/COPMPO/Footer/Footer'
-import AllNav from '../../../../src/components/COPMPO/NavBarAll/NavBar'*/
+import Footer from '../../../components/Footer/Footer'
+import AllNav from '../../../../src/components/NavBarAll/AllNav'
+import { Link } from 'react-router-dom'
 
 function AddJob() {
     const [InputValues1, setInputValues1] = useState([]);
@@ -51,6 +51,7 @@ function AddJob() {
 
     return (
         <>
+          <AllNav/>
             <div className='Ah-add-jobs'>
                 <div className="Ah-title-page text-center mt-2">
                     <h1>Add Job</h1>
@@ -72,12 +73,12 @@ function AddJob() {
                     InputValues3={InputValues3}
                 />
                 <div className='posted'>
-                    <button className='posted-button mb-5' onClick={FormValue}>Posted</button>
+                    <Link to='/JobMain' className='posted-button mb-5' onClick={FormValue}>Posted</Link>
                 </div>
             </div>
-            {/*<footer>
+            <footer>
                 <Footer />
-           </footer>*/}
+           </footer>
         </>
     )
 }

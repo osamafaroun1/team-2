@@ -2,8 +2,8 @@ import './JobMain.css'
 import JobName from '../components/JobInfo'
 import JobInfo from '../components/JobName'
 import InputEmployee from '../components/InputEmployee';
-/*import Footer from '../../../../src/components/COPMPO/Footer/Footer'
-import AllNav from '../../../../src/components/COPMPO/NavBarAll/NavBar'*/
+import Footer from '../../../../src/components/Footer/Footer'
+import AllNav from '../../../../src/components/NavBarAll/NavBar'
 
 function JobMain() {
   const employee1 = {
@@ -52,15 +52,16 @@ function JobMain() {
 
   return (
     <>
+      <AllNav />
       <div className='Ah-main-job'>
         <JobInfo />
         <InputEmployee title={employee1.title} content={employee1.content} />
         <InputEmployee title={employee2.title} content={employee2.content} showDivider={true} dividerText="A human resources employee was appointed to provide advice during the interview." />
         <JobName />
       </div>
-     {/* <footer>
+      <footer>
         <Footer />
-  </footer>*/}
+      </footer>
     </>
   )
 }

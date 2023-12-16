@@ -12,6 +12,7 @@
 
 .lable-img{
    position: relative;
+   cursor: pointer;
   
 }
 .lable-img .src{

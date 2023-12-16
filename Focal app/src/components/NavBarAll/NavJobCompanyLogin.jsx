@@ -28,7 +28,9 @@ const NavJobCompanyLogin = () => {
           />
           <DropDown
             name="Jobs"
+            to1='/ManageJob'
             option1="Manage Jobs"
+            to2='/AddJob'
             option2="Add Job"
             option3="Search Employee"
             option4="Wallet"
@@ -41,6 +43,7 @@ const NavJobCompanyLogin = () => {
           />
         <DropDown
             name="Blog"
+            to1='/businessOwnerProfile/blogs'
             option1="Search Blog"
             option2="Add Blog"
             option3="Saved Blogs"
@@ -49,7 +52,7 @@ const NavJobCompanyLogin = () => {
           <DropDown name="Ads" />
           <NavLink className="RA-HER" >Hir Us</NavLink>
         </Nav>
-        <ButtonNotifcation icon={icon} />
+        <ButtonNotifcation icon={icon} pofile="/businessOwnerProfile" />
         <ButtonLanguge />
       </Navbar.Collapse>
     </Navbar>

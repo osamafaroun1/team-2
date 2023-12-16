@@ -6,7 +6,7 @@ function Section1() {
       <div className="section1">
         <div className="AK">
           <h1 className="h1">What is Focal App?</h1>
-          <p>
+          <p className="OS-noClass">
             The first platform in Syria that brings together companies,
             business owners, employees, and freelancers, in addition to
             bloggers. <p> This platform seeks to develop youth and secure fair job

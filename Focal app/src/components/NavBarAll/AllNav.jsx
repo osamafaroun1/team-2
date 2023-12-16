@@ -2,16 +2,15 @@ import React, { useEffect, useState } from 'react'
 import NavBar from './NavBar'
 import NavJobSeekerLogin from './NavJobSeekerLogin'
 import NavJobCompanyLogin from './NavJobCompanyLogin'
-import { useLocation, useParams } from 'react-router'
+
 
 export default function AllNav() {
-    const[navState , SetNavState] = useState(3)
+    const[navState , SetNavState] = useState(2)
     
     const[compo , setcompo] = useState(false )
     const[compo2 , setcompo2] = useState(false )
     const[compo3 , setcompo3] = useState(false )
-      const params = useParams();
-      const location = useLocation(); 
+
         useEffect(() => {
           
         if (navState === 1  ){

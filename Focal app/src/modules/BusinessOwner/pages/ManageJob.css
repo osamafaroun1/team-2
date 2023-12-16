@@ -11,7 +11,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-;
+
 }
 .Ah-title{
     font-family: var(--font-family) ;
@@ -30,9 +30,10 @@
    /* padding: 0 80px;*/
    width: 80%;
 }
-button.Ah-add-job{
+.Ah-add-job{
     width: 202px;
-    height: max-content;
+    /*height: max-content;*/
+    padding: 10px;
     color: white;
     background-color: var(--clr-secondary-black);
     font-family: var(--font-family);
@@ -41,6 +42,9 @@ button.Ah-add-job{
     font-weight: 700;
     line-height: 28px;
     border-radius: 15px;
+    text-decoration: none;
+    margin-top:0 auto !important;
+    display: block;
 }
 .Ah-links{
     padding: 0 20px;

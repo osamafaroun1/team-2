@@ -6,7 +6,7 @@ function Section3() {
     <>
       <div className="section3">
         <div className="AK3">
-          <h1>Lat’s Talk</h1>
+          <h1 className="Os_Header_2_NoClass">Lat’s Talk</h1>
           <p
             className="para"
             style={{

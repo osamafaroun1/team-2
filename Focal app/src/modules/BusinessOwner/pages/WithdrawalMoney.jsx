@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 import RecipientInformation from "../components/RecipientInformation.jsx";
 import './WithdrawalMoney.css'
-/*import Footer from '../../../../src/components/COPMPO/Footer/Footer'
-import AllNav from '../../../../src/components/COPMPO/NavBarAll/NavBar'*/
+import Footer from '../../../../src/components/Footer/Footer'
+import AllNav from '../../../../src/components/NavBarAll/NavBar'
 
 
 const WithdrawalMoney = () => {
@@ -25,6 +25,7 @@ const WithdrawalMoney = () => {
 
   return (
     <>
+    <AllNav/>
       <div className="ms-wm-main">
         <p className="ms-wm-title">Withdrawal Money</p>
         <p className="ms-wm-des">
@@ -75,9 +76,9 @@ const WithdrawalMoney = () => {
           </div>
         </div>
       </div>
-    { /* <footer>
+      <footer>
         <Footer />
-     </footer>*/}
+      </footer>
     </>
   );
 };
