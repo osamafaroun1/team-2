@@ -31,7 +31,7 @@ export const jopSeekerRoutes = [
                 element: <Blog1 />,
               },  
             {
-                path: "/jopseekerprofile/blog/mublog",
+                path: "/jopseekerprofile/blog/myblog",
                 element: <Blog2 />,
               },  
         
