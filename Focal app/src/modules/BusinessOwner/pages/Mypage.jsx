@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import SideBar from '../components/SideBar'
 import './Mypage.css'
 import { Outlet } from 'react-router-dom'
-
-
+import AllNav from '../../../components/NavBarAll/AllNav'
+import Footer from '../../../components/Footer/Footer'
 
 const MyPage = () => {
 
@@ -11,10 +11,11 @@ const MyPage = () => {
     function handleSidebar() {
         setsidebarCollaps(!SidebarCollaps);
     }
-//////////////////State Managment Api
+    //////////////////State Managment Api
 
     return (
         <>
+            <AllNav />
             <div id='OS-page' className='container-fluid'>
                 <>
                     {
@@ -29,14 +30,15 @@ const MyPage = () => {
                         <SideBar
                             SidebarCollaps={SidebarCollaps}
                             setsidebarCollaps={setsidebarCollaps}
-                          
+
                         />
                     </div>}
                     <div className="col">
-                       <Outlet/>
+                        <Outlet />
                     </div>
                 </div>
-            </div>
+            </div>        
+           <Footer/>     
         </>
     )
 }

@@ -23,7 +23,7 @@
 
 
 
-p {
+.OS-noClass {
   font-family: var(--font-family);
   font-size: var(--fs-medium);
   color: var(--focal-x-disable, #938c8c);

@@ -6,7 +6,7 @@ import Swal from 'sweetalert2'
 
 const Information = (props) => {
     /***********************API **************************/
-    ////////My Token & userId ( comming from team 1 by localstorage or cookies )
+    //My Token & userId ( comming from team 1 by localstorage or cookies )
     localStorage.setItem('user_id', 2);
     localStorage.setItem('access_token', "2|nOrFiMCPVUloCNt1MiwJV0gweefwwmG2Kqs4NQjic5a187d0")
     const user_id = localStorage.getItem('user_id');

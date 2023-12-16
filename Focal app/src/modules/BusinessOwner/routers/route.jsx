@@ -1,4 +1,4 @@
-/*
+
 import MyPage from "../pages/Mypage";
 import Posts from "../components/Posts"
 import Blogs from "../components/Blogs"
@@ -58,4 +58,3 @@ export const businessroutes = [
     element: <ManageJob/>, 
   }
 ];
-*/

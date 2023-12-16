@@ -86,7 +86,7 @@ export default function FormLogin() {
                         <label></label>
                     </div>
                     <div className='HD_forget'> 
-                        <label><Link >forget password?</Link></label>
+                        <label className='hd_lable'><Link >forget password?</Link></label>
                     </div>
                     <div className='btns'>
                     <button onClick={submit} className='btnlogin'> Login</button>

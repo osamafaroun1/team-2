@@ -5,6 +5,7 @@ import Step1 from '../components/Step1';
 import Step2 from '../components/Step2';
 import Step3 from '../components/Step3';
 import Step4 from '../components/Step4';
+import { Link } from 'react-router-dom';
 /*import AllNav from '../../../../src/components/COPMPO/NavBarAll/NavBar'*/
 
 function StepperLogin() {
@@ -71,7 +72,7 @@ function StepperLogin() {
           }}>Next</button>
           : <>
             <button className='nb-buttons1' onClick={() => setActiveStep(activeStep - 1)}>Previous</button>
-            <button className='nb-buttons3'>Confirm</button>
+            <Link to="/businessOwnerProfile" className='nb-buttons3'>Confirm</Link>
           </>
         }
       </div>

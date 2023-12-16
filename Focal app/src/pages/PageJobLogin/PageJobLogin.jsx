@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom'
 import FormLogin from './FormLogin/FormLogin'
 import './PageJobLoginStyle.css'
+import AllNav from '../../components/NavBarAll/AllNav'
 
 export default function PageJobLogin() {
     return (
         <>
+         <AllNav />
         <div className='HD_section-JobLogin'>
         <div className='HD_boxTitlle'>
             <h1 className='HD_titlle'>Create New Account as</h1>

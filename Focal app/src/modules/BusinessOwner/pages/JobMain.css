@@ -4,7 +4,6 @@
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 7rem !important;
-   /*  height: 100vh;*/
     overflow-y: auto;
     height: max-content;
    
@@ -181,6 +180,11 @@
     font-size: var(--fs-medium);
 }
 
+
+
+
+
+
 .SM-container {
     margin: 50px auto;
     display: flex;
@@ -201,7 +205,7 @@
 
 .SM-title {
     border-bottom: 1px solid #938C8C;
-    ;
+   
     margin-top: 18px;
 }
 
@@ -222,7 +226,7 @@
     line-height: 24px;
 }
 
-.OS-employee  {
+.OS-employee {
     color: var(--focal-x-disable, #938C8C);
     font-family: Montserrat;
     font-size: 16px;
@@ -267,6 +271,177 @@
     height: 100vh;
     overflow-y: auto;
 }
+
+/*********************************************************************/
+.overlay{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    backdrop-filter: blur(2px );
+    font-family:var(--font-family) ;
+
+}
+.modal-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+    border-radius: 10px;
+    width: 70%;
+    background-color: var(--clr-white);
+    padding: 50px 40px;
+    font-family:var(--font-family) ;
+    box-shadow: 0px 4px 20px 0px rgba(40, 40, 40, 0.15);
+}
+.Ah-complaint-modal{
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.Ah-active-modal{
+    overflow-y: hidden;
+}
+.Ah-copmlai-title{
+    font-size: var(--fs-medium-title) !important; ;
+    font-weight: 700 !important;
+    width: 100% !important;
+}
+.OS-Complaint{
+    width: 90% !important;
+    border: 0;
+    border-bottom: 2px solid var(--clr-black);
+    outline: none;
+    font-size: var(--fs-medium);
+    color: #888;
+}
+
+.OS-Star{
+    margin-top: 20px;
+    font-size: var(--fs-medium-text);
+    width: max-content;
+    position: relative;
+}
+.Ah-type{
+    width: 100%;
+}
+.Ah-type .OS-Complaint{
+    width: 95% !important;
+    text-align: start !important;
+}
+.Ah-type .OS-Textarea-complaint{
+    width: 100% !important;
+    border: 0;
+    background-color:  var(--clr-gray);
+    padding: 20px;
+    color: black;
+    outline: none;
+    
+}
+.OS-Textarea-complaint::placeholder{
+    color: black;
+    font-size: var(--fs-medium);
+}
+.Ah-complaint-text{
+    color: #938C8C;
+    font-size: var(--fs-small);
+}
+.Ah-button-c{
+    width: 95% !important;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Ah-complaint-button{
+    width: 204px;
+    height: 40px;
+    font-family: var(--font-family);
+    font-size: var(--fs-medium);
+    line-height: 28px;
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+}
+.Ah-close-modal{
+    padding: 0 30px;
+    font-family: var(--font-family);
+    font-size: var(--fs-medium);
+    line-height: 28px;
+    border: none;
+    background-color: transparent;
+    color: var(--clr-danger);
+}
+/* confirm Modal */
+.Ah-co{
+    width: 50%;
+}
+.Ah-confirm-text{
+    width: 80%;
+    font-size: var(--fs-medium-text);
+    text-align: center;
+    color: var(--clr-gray);
+}
+@media only screen and (min-width:1600px){
+    .Ah-copmlai-title{
+        font-size: var(--fs-large-text);
+    }
+    .OS-Star{
+        font-size: var(--fs-medium-title);
+
+    }
+    .OS-Textarea-complaint::placeholder{
+        font-size: var(--fs-medium-lg);
+    }
+    .Ah-complaint-button{
+        width: 240px;
+        height: 60px;
+        font-size: var(--fs-medium-lg);
+        line-height: 40px;
+        margin-bottom: 5px;
+    }
+    .Ah-close-modal{
+        font-size: var(--fs-medium-lg);
+    }
+    p.Ah-confirm-text{
+        font-size: var(--fs-medium-text);
+    }
+}
+@media only screen and (max-width: 767px) {
+    .Ah-copmlai-title{
+        font-size: var(--fs-medium-text);
+    }
+    .OS-Star{
+        font-size: var(--fs-medium-lg);
+
+    }
+    .OS-Textarea-complaint::placeholder{
+        font-size: var(--fs-small);
+    }
+    .Ah-complaint-button{
+        width: 140px;
+        height: 30px;
+        font-size: var(--fs-small);
+        line-height: 25px;
+        margin-bottom: 5px;
+    }
+    .Ah-close-modal{
+        font-size: var(--fs-small);
+    }
+    .Ah-button-c{
+        justify-content: center;
+    }
+    .Ah-co{
+        width: 75% !important;
+    }
+    p.Ah-confirm-text{
+        font-size: var(--fs-small);
+    }
+}
+
 
 
 @media only screen and (min-width:1600px) {

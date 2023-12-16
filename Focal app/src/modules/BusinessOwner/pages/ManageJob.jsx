@@ -2,8 +2,9 @@ import CardManageJob from '../components/CardManageJob'
 import './ManageJob.css'
 import { Data } from '../components/Data_Cards'
 import { useState } from 'react'
-/*import Footer from '../../../../src/components/COPMPO/Footer/Footer'
-import AllNav from '../../../../src/components/COPMPO/NavBarAll/NavBar'*/
+import Footer from '../../../../src/components/Footer/Footer'
+import AllNav from '../../../../src/components/NavBarAll/NavBar'
+import { Link } from 'react-router-dom'
 
 
 function ManageJob() {
@@ -16,6 +17,7 @@ function ManageJob() {
     }
     return (
         <>
+            <AllNav />
             <div className='Ah-manage-job'>
                 <div className='Ah-large-screen'>
                     <div className="Ah-title">
@@ -27,7 +29,7 @@ function ManageJob() {
                             Add a post and manage it from here.
                         </p>
                     </div>
-                    <button className='Ah-add-job mt-3 mb-3' >Add New Job</button>
+                    <Link to="/AddJob"  className='Ah-add-job mx-auto mt-3 mb-3' >Add New Job</Link>
                     <div className="mb-2">
                         <nav className='Ah-links d-flex justify-content-center gap-4 mb-3'>
                             <a href="#" className='Ah-active-link'>All Posts</a>
@@ -50,9 +52,9 @@ function ManageJob() {
                     </div>
                 </div>
             </div>
-           {/* <footer>
+            <footer>
                 <Footer />
-            </footer>*/}
+            </footer>
         </>
 
     )

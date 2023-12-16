@@ -1,10 +1,12 @@
 
+import AllNav from '../../components/NavBarAll/AllNav'
 import FormLogin from './FormLogin/FormLogin'
 import './RegisterStyle.css'
 
 export default function Register () {
     return (
         <>
+        <AllNav />
         <div className='HD_section-JobLogin'>
         <div className='HD_boxTitlle'>
             <h1 className='HD_titlle'>Create New Account as</h1>

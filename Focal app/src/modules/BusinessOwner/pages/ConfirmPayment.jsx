@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import './ConfirmPayment.css'
 import SenderInformation from "../components/SenderInformation";
-/*import Footer from '../../../../src/components/COPMPO/Footer/Footer'
-import AllNav from '../../../../src/components/COPMPO/NavBarAll/NavBar'*/
+import Footer from '../../../../src/components/Footer/Footer'
+import AllNav from '../../../../src/components/NavBarAll/NavBar'
 
 const ConfirmPayment = () => {
   const [senderInfo, setSenderInfo] = useState({
@@ -24,6 +24,7 @@ const ConfirmPayment = () => {
 
   return (
     <>
+    <AllNav/>
       <div className="ms-main">
         <p className="ms-title">Confirm Payment</p>
         <p className="ms-des">
@@ -78,9 +79,9 @@ const ConfirmPayment = () => {
           </div>
         </div>
       </div>
-      {/* <footer id="BusinessOwnerFooter">
+      <footer id="BusinessOwnerFooter">
         <Footer />
-          </footer>*/ }
+      </footer>
     </>
   );
 };
